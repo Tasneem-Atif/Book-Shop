@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+body .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background-color: #e2e2e3;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  color: #007bff;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+main {
+  display: flex;
+  margin: 100px 20px;
+}
+
+.sidebar {
+  width: 500px;
+  margin-right: 20px;
+}
+
+.sidebar h3 {
+  margin: 10px 30px 10px 10px;
+  font-size: 48px;
+  display: inline-block;
+  color: #555;
+}
+
+.buttons {
+  margin: 125px auto 0;
+}
+
+#all,
+#romance,
+#kids,
+#cook {
+  border: none;
+  margin: 30px 0px;
+  background-color: #dbdcdf75;
+  border-radius: 10px;
+  padding: 25px;
+  display: block;
+  color: #555;
+  width: 100%;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#all:hover,
+#romance:hover,
+#kids:hover,
+#cook:hover {
+  color: #007bff;
+}
+
+#productDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  align-items: end;
+  padding: 20px;
+  background-color: #eee;
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px 0 #888;
+  padding-bottom: 25px;
+  margin: 130px auto;
+  /* height: 80vh; */
+}
+
+/* .product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+} */
+
+#productDetails img {
+  max-width: 100%;
+  height: 100%;
+}
+
+#productDetails .info h1 {
+  margin: 10px 0 20px;
+  position: relative;
+  font-size: 50px;
+  top: -200px;
+}
+
+#productDetails .info p {
+  margin: 5px 0;
+}
+
+#productDetails .price {
+  font-weight: bold;
+  color: #555;
+  font-size: 30px;
+  position: relative;
+  top: -200px;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 20px 2px 0;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  position: relative;
+  top: -100px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0e977e;
+  /* color: #eee; */
+}

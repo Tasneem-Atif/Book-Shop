@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshop Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1><a href="">Bookshop</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#" onclick="goToProducts()">Products</a></li>
+
+          <li>
+            <a href="#" id="cart-icon" onclick="goToCart()"
+              >Cart
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cart-count">0</span>
+            </a>
+          </li>
+          <li id="username"></li>
+          <li>
+            <a href="#" onclick="logout()"
+              >Logout <i class="logout fa-solid fa-arrow-right-from-bracket"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <div class="slider-container">
+          <div class="slide"><img src="img1.jpg" alt="" /></div>
+          <div class="slide"><img src="img2.jpg" alt="" /></div>
+          <div class="slide"><img src="img3.jpg" alt="" /></div>
+          <div class="slide"><img src="img4.jpg" alt="" /></div>
+          <div class="slide"><img src="img5.jpg" alt="" /></div>
+          <div class="slide"><img src="img6.jpg" alt="" /></div>
+          <div class="slide"><img src="img7.jpg" alt="" /></div>
+          <div class="slide"><img src="img8.jpg" alt="" /></div>
+          <div class="slide"><img src="img9.jpg" alt="" /></div>
+          <div class="slide"><img src="img10.jpg" alt="" /></div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <!-- <p>Explore our collection of books and find your next read!</p> -->
+        <!-- <button onclick="addToCart()">Add to Cart</button> -->
+      </main>
+    </div>
+
+    <div class="home">
+      <div class="container">
+        <div class="card">
+          <img src="../Products/book10.webp" alt="" />
+          <div class="info">
+            <p class="name">Wolf Song</p>
+            <p class="price">18.70$</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../Products/book12.webp" alt="" />
+          <div class="info">
+            <p class="name">Wolf Song</p>
+            <p class="price">18.70$</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../Products/book18.webp" alt="" />
+          <div class="info">
+            <p class="name">Wolf Song</p>
+            <p class="price">18.70$</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../Products/book17.webp" alt="" />
+          <div class="info">
+            <p class="name">Wolf Song</p>
+            <p class="price">18.70$</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../Products/book1.webp" alt="" />
+          <div class="info">
+            <p class="name">Wolf Song</p>
+            <p class="price">18.70$</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../Products/book4.webp" alt="" />
+          <div class="info">
+            <p class="name">Wolf Song</p>
+            <p class="price">18.70$</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../Products/book11.webp" alt="" />
+          <div class="info">
+            <p class="name">Wolf Song</p>
+            <p class="price">18.70$</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="topButton" title="Go to top">
+      <i class="fa-solid fa-hand-point-up"></i>
+    </button>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <ul>
+              <li>Email: info@bookshop.com</li>
+              <li>Phone: +1234567890</li>
+              <li>Address: 123 Book Street, Tanta, Egypt</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 Bookshop | Designed by Tasneem Atif
+        </div>
+      </div>
+    </footer>
+
+    <script src="./home.js"></script>
+  </body>
+</html>
